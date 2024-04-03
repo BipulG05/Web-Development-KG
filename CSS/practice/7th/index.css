@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.progress_container{
+    width:90%;
+    height: 12px;
+    margin: 10px;
+    background-color: grey;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+}
+.progress_bar{
+    background-color: rgb(197, 197, 255);
+    height: 100%;
+    width: 50%;
+    border-radius: 12px;
+    animation: animation_progress 3s infinite;
+}
+@keyframes animation_progress {
+    0%{width: 0%;}
+    90%{width: 95%;}
+    95%{width: 70%;}
+    100%{width: 100%;}
+}

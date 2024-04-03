@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width:100px;
+            height: 100px;
+            overflow: hidden;
+            background-color: lightgreen;
+            margin: 5px;
+            padding: 5px;
+        }
+        #static{
+            position: static;
+        }
+        #relative{
+            position: relative;
+            top: 10px;
+            left:50px;
+        }
+        #absolute{
+            position: absolute;
+            top: 20px;
+
+        }
+        #fixed{
+            position: fixed;
+            right: 50px;
+        }
+        #z_idx{
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <h1>Position</h1>
+        <p >There are mainly 4 types of ppositions
+            (static, relative, absolute, fixed)
+        </p>
+        <p  >Static - default value(top,right,bottom,left,z-index not work)</p>
+        <div id="static" class="box">static</div>
+        <div id="relative" class="box">relative</div>
+        <p  >Realtive - relative to itself(static) (top,right,bottom,left,z-index work from static(self) pposition)</pclass="box" >
+        <div id="absolute" class="box">absolute</div>
+        <p  >Absolute - it is atrt from page left corner</p>
+        <div id="fixed" class="box">fixed</div>
+        <div class="box"></div>
+        <p id="z_idx" >Fixed - Element position relative to view port,doesnot move or scroll</p>
+        <div class="box"></div>
+        <div class="box"></div>
+        
+    </div>
+</body>
+</html>

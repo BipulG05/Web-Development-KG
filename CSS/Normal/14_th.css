@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 630px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    height: 70px;
+    width: 70px;
+    margin: 2px;
+    background-color: rgb(59, 121, 176);
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+#box1:hover{
+    transform: rotate(45deg);
+}
+#box2:hover{
+    transform: rotatex(180deg);
+}
+#box3:hover{
+    transform: rotatey(90deg);
+}
+#box4:hover{
+    transform: rotatez(234deg);
+}
+#box5:hover{
+    transform: scale(0.5);
+}
+#box6:hover{
+    transform: translate(50px,50px);
+}
+#box7:hover{
+    transform: skew(180deg);
+}

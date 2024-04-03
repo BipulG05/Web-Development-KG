@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#pad{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+#btn{
+    margin: 100px;
+    height: 70px;
+    width: 70px;
+    padding: 10px 15px;
+    border: 2px dotted red;
+    border-radius: 50px;
+}
+#box1st{
+    width: 100px;
+    box-sizing: content-box;
+    background-color: rgb(157, 253, 13);
+}
+#box2nd{
+    width: 100px;
+    box-sizing: border-box;
+    background-color: rgb(180, 201, 149);
+}

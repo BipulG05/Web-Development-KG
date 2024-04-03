@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispplay elements over page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            margin: 2px;
+        }
+        .divBox{
+            display: inline-block; /*default value block*/
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background-color: lightseagreen;
+        }
+        #box2{
+            /* visibility: hidden;
+            display: none; */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Two type element - (inline, block) -->
+    <h1>Two type element - (inline, block)</h1>
+    <div class="divBox">Box1</div>
+    <div id="box2" class="divBox">Box2</div>
+    <div class="divBox">Box3</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#nav h1{
+    background-color: antiquewhite;
+    text-align: center;
+    text-transform: capitalize;
+}
+#inner{
+    font-size: 10px;
+}
+#outer{
+    font-size: 25px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }

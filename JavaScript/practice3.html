@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Click-count{
+            width: 80px;
+            height: 80px;
+            padding: 5px;
+            color:white;
+            font-size: 35px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            /* background-color: blue; */
+        }
+        .js-odd{
+            background-color: tomato;
+        }
+        .js-even{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting"></div>
+    <button id="Click-count" onclick="countClick();"></button>
+</body>
+<script src="./practice3.js"></script>
+<script>
+    doGreeting();
+    updateButton();
+</script>
+</html>

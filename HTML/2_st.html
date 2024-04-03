@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0ppx;
+        padding: 0px;
+        
+        /* overflow-y: hidden; */
+        /* overflow-x: hidden; */
+      }
+      ::-webkit-scrollbar {
+        display: none;
+    }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      main{
+        padding: 2px;
+      }
+      nav,footer {
+        height: 5vh;
+        display: flex;
+        background-color: black;
+        color: white;
+        text-align: center;
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        position: relative;
+      }
+      nav{
+        margin-top: 0rem;
+        top: 0.1rem;
+        margin-bottom: 0.5rem;
+        position:inherit;
+      }
+      section{
+        padding: 5px;
+        margin: 2px;
+      }
+      footer{
+        margin-top: 0.5rem;
+        bottom: 0rem;
+      }
+      ul{
+        width: 70dvw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+      }
+      li{
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <p>Header</p>
+            <ul>
+              <li><a href="./1_st.html">link 1 </a></li>
+              <li><a href="#oo">link 2 </a></li>
+              <li><a href="#oo">link 3 </a></li>
+              <li><a href="#oo">link 4 </a></li>
+            </ul>
+          </nav>
+      This is a header tag
+    </header>
+    <main>
+      <section>
+        <aside>
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+          </ul>
+        </aside>
+
+        <h2>About Us :</h2>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero
+          vitae sapiente veritatis doloribus adipisci excepturi quisquam
+          architecto nesciunt possimus quam consequatur, consectetur, culpa
+          quasi nam nihil perferendis quo maxime?
+        </article>
+        <h2>Services :</h2>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda,
+          at, ab amet a sint aliquam fugiat vero voluptatem minima soluta animi
+          tempora autem vel excepturi reiciendis neque delectus voluptas totam.
+        </article>
+      </section>
+      <section>
+        <h2>Table</h2>
+        <table border="1">
+            <caption>Technology</caption>
+            <tr>
+                <th>Language</th>
+                <td>Rating</td>
+                <td>Experience(Year)</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>5/10</td>
+                <td>2 year</td>
+            </tr>
+            <tr>
+                <td>CPP</td>
+                <td>8/10</td>
+                <td>2 year</td>
+            </tr>
+        </table>
+      </section>
+      <section>
+        <form action = "/contact-me">
+            Date : <input type="date"><br>
+            File : <input type="file"><br>
+            Color : <input type="color"><br>
+            Price Range : <input type="range" ><br>
+            Pock Me : <input type="button" value="poked"><br>
+            Submit : <input type="submit"><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gendar"><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gendar">
+        </form>
+      </section>
+      <section>
+        <form>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option>-Select-</option>
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="Others">Others</option>
+            </select><br>
+            <label for="addr">Adder</label>
+            <textarea rows="2" id="addr" placeholder="Enter your addr"></textarea >
+        </form>
+      </section>
+      <section>
+        <label id="ifr">This is us</label>
+        <iframe width="360" height="315" src="https://www.youtube.com/embed/tcmNo-cdCPU?si=dxU2wNR6MdVHCvHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </iframe><br>
+        <iframe width="500" src="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">
+
+        </iframe>
+        <iframe width="300" src="./1_st.html"></iframe>
+      </section>
+    </main>
+    <footer>
+      <p>footar</p>
+      <ul>
+        <li><a href="./1_st.html">link 1 </a></li>
+        <li><a href="#oo">link 2 </a></li>
+        <li><a href="#oo">link 3 </a></li>
+        <li><a href="#oo">link 4 </a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

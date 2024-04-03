@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #game {
+            width: 300px;
+        }
+        #result {
+            width: 100%;
+            margin: 10px;
+            padding: 5px;
+            padding-left: 20px;
+            color: green;
+            border: 1px solid black;
+            text-align: start;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Bat Ball Game</h1>
+        <button onclick="clickBat('Bat')">Bat</button>
+        <button onclick="clickBat('Ball')">Ball </button>
+        <button onclick="clickBat('Stump')">Stump</button>
+        <div id="result">Select Your Choice !!!</div>
+    </div>
+</body>
+<script>
+    let score = {
+        win: 0,
+        lost: 0,
+        tie: 0,
+        displayScore: function(){
+            return `your win : ${score.win}<br> you lost : ${score.lost}.<br> Tie : ${score.tie}`;
+        }
+    };
+    function clickBat(a) {
+        let randomNo = Math.random() * 3;
+        let computerChoice;
+        if (randomNo < 2) {
+            computerChoice = 'Bat';
+        }
+        else if (randomNo < 3) {
+            computerChoice = 'Ball';
+        }
+        else {
+            computerChoice = 'Stump';
+        }
+        console.log(`your choice ${a} \ncomputer choice ${computerChoice}`);
+        let result = '';
+        if ((a === 'Bat' && computerChoice === 'Ball') || (a === 'Stump' && computerChoice === 'Bat') || (a === 'Ball' && computerChoice === 'Stump')) {
+            score.win++;
+            result = (`Your choice : ${a}. <br>Computer Choice : ${computerChoice}. <br>User won.<br>your win : ${score.win}<br> you lost : ${score.lost}.<br> Tie : ${score.tie}`);
+        }
+        else if (computerChoice === a) {
+            score.tie++;
+            result = (`Your choice : ${a}. <br>Computer Choice : ${computerChoice}. <br>It's a tie.<br>your win : ${score.win}<br> you lost : ${score.lost}.<br> Tie : ${score.tie}`);
+        }
+        else {
+            score.lost++;
+            result = (`Your choice : ${a}. <br>Computer Choice : ${computerChoice}. <br>Computer own.<br>your win : ${score.win}<br> you lost : ${score.lost}.<br> Tie : ${score.tie}`);
+        }
+        document.querySelector('#result').innerHTML = result;
+    }
+</script>
+</html>

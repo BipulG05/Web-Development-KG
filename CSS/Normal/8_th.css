@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+    background-color: lightgreen;
+    margin: 5px;
+    padding: 5px;
+}
+#static{
+    position: static;
+}
+#relative{
+    position: relative;
+    top: 10px;
+    left:50px;
+}
+#absolute{
+    position: absolute;
+    top: 20px;
+
+}
+#fixed{
+    position: fixed;
+    right: 50px;
+}

@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-size: 20px;
+}
+#game {
+    width: 400px;
+}
+#result {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    color: green;
+    border: 1px solid black;
+    text-align: start;
+}
+.choice-buttton{
+    width: 100px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.Choice-image{
+    height: 55px;
+}

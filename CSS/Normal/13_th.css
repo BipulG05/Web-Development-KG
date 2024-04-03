@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.animation{
+    margin: 15px;
+}
+#btn{
+    height: 25px;
+    width: 120px;
+    background-color: forestgreen;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#btn:hover{
+    width: 150px;
+    height: 30px;
+    background-color: aqua;
+}
+#btn:active{
+    background-color: rgb(152, 110, 192);
+}
+#tran_Ani{
+    height: 45px;
+    width: 220px;
+    background-color: forestgreen;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s; */
+    transition: all 1s ease 0s;
+}
+
+#tran_Ani:hover{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(136, 182, 67);
+}
+#tran_Ani:active{
+    background-color: rgb(152, 110, 192);
+}
